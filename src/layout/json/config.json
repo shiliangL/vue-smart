@@ -1,0 +1,37 @@
+{
+  "title": "vue-smart",
+  "setting": [{
+    "text": "修改密码",
+    "type": "update-password"
+  },
+  {
+    "text": "退出登录",
+    "type": "loginout"
+  }
+  ],
+  "systemnavigation": [{
+    "name":"子系统",
+    "url": "http://foundation"
+  },
+  {
+    "name":"子系统",
+    "url": "http://indent"
+  },
+  {
+    "name":"子系统",
+    "url": "http://product"
+  },
+  {
+    "name":"子系统",
+    "url": "http://product"
+  },
+  {
+    "name":"子系统",
+    "url": "http://member"
+  },
+  {
+    "name":"子系统",
+    "url": "http://member"
+  }
+  ]
+}

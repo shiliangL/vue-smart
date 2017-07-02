@@ -1,0 +1,83 @@
+[{
+  "name": "index",
+  "text": "系统首页",
+  "icon": "icon iconfont icon-dingdanguanli"
+}, {
+  "name": "",
+  "text": "产品管理",
+  "icon": "icon iconfont icon-chanpinguanli",
+  "items": [{
+    "name": "deList",
+    "text": "绑定设备"
+  }, {
+    "name": "deRange",
+    "text": "设备管理"
+  }]
+}, {
+  "name": "",
+  "text": "价格管理",
+  "icon": "icon iconfont icon-kejiesuan",
+  "items": [{
+    "name": "price-unify",
+    "text": "产品定价"
+  }, {
+    "name": "price-single",
+    "text": "经销商价格"
+  }, {
+    "name": "price-vary",
+    "text": "销售价格"
+  }]
+}, {
+  "name": "",
+  "text": "客户管理",
+  "icon": "icon iconfont icon-customer",
+  "items": [{
+    "name": "fee-basics",
+    "text": "用户管理"
+  }, {
+    "name": "fee-return",
+    "text": "经销商管理"
+  }]
+}, {
+  "name": "",
+  "text": "库存管理",
+  "icon": "icon iconfont icon-kucunguanli",
+  "items": [{
+    "name": "promotio-activity",
+    "text": "厂家库存"
+  }, {
+    "name": "promotion-logoff",
+    "text": "经销商库存"
+  }, {
+    "name": "promotion-create",
+    "text": "区域库存"
+  }]
+}, {
+  "name": "",
+  "text": "结算管理",
+  "icon": "icon iconfont icon-kejiesuan",
+  "items": [{
+    "name": "operating-assistant",
+    "text": "经销商结算"
+  }, {
+    "name": "operating-resolve",
+    "text": "客户结算"
+  }, {
+    "name": "operating-setting",
+    "text": "合作商户结算"
+  }]
+}, {
+  "name": "",
+  "text": "订单管理",
+  "icon": "icon iconfont icon-dingdanguanli",
+  "items": [{
+    "name": "coupon-generate",
+    "text": "合作商户订单"
+  }, {
+    "name": "coupon-manage",
+    "text": "经销商订单"
+  }, {
+    "name": "coupon-count",
+    "text": "总订单统计"
+  }]
+}]
