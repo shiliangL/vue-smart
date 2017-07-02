@@ -18,13 +18,13 @@
   "text": "价格管理",
   "icon": "icon iconfont icon-kejiesuan",
   "items": [{
-    "name": "price-unify",
+    "name": "",
     "text": "产品定价"
   }, {
-    "name": "price-single",
+    "name": "",
     "text": "经销商价格"
   }, {
-    "name": "price-vary",
+    "name": "",
     "text": "销售价格"
   }]
 }, {
@@ -32,10 +32,10 @@
   "text": "客户管理",
   "icon": "icon iconfont icon-customer",
   "items": [{
-    "name": "fee-basics",
+    "name": "KH_Manage",
     "text": "用户管理"
   }, {
-    "name": "fee-return",
+    "name": "KH_Distributor",
     "text": "经销商管理"
   }]
 }, {
@@ -43,13 +43,13 @@
   "text": "库存管理",
   "icon": "icon iconfont icon-kucunguanli",
   "items": [{
-    "name": "promotio-activity",
+    "name": "",
     "text": "厂家库存"
   }, {
-    "name": "promotion-logoff",
+    "name": "",
     "text": "经销商库存"
   }, {
-    "name": "promotion-create",
+    "name": "",
     "text": "区域库存"
   }]
 }, {
@@ -57,13 +57,13 @@
   "text": "结算管理",
   "icon": "icon iconfont icon-kejiesuan",
   "items": [{
-    "name": "operating-assistant",
+    "name": "",
     "text": "经销商结算"
   }, {
-    "name": "operating-resolve",
+    "name": "",
     "text": "客户结算"
   }, {
-    "name": "operating-setting",
+    "name": "",
     "text": "合作商户结算"
   }]
 }, {
@@ -71,13 +71,13 @@
   "text": "订单管理",
   "icon": "icon iconfont icon-dingdanguanli",
   "items": [{
-    "name": "coupon-generate",
+    "name": "",
     "text": "合作商户订单"
   }, {
-    "name": "coupon-manage",
+    "name": "",
     "text": "经销商订单"
   }, {
-    "name": "coupon-count",
+    "name": "",
     "text": "总订单统计"
   }]
 }]

@@ -11,27 +11,27 @@
   ],
   "systemnavigation": [{
     "name":"子系统",
-    "url": "http://foundation"
+    "url": "http://"
   },
   {
     "name":"子系统",
-    "url": "http://indent"
+    "url": "http://"
   },
   {
     "name":"子系统",
-    "url": "http://product"
+    "url": "http://"
   },
   {
     "name":"子系统",
-    "url": "http://product"
+    "url": "http://"
   },
   {
     "name":"子系统",
-    "url": "http://member"
+    "url": "http://"
   },
   {
     "name":"子系统",
-    "url": "http://member"
+    "url": "http://"
   }
   ]
 }

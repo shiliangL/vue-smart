@@ -5,7 +5,7 @@
     </div>
     <div class="item-one">
       <el-row :gutter="20">
-        <el-col :span="6" v-for="(item,index) in rowHead">
+        <el-col :span="6" v-for="(item,index) in rowHead" :key="index">
           <div class="content">
             <div :class="item.theme">
               <h3 v-text="item.txt"></h3>

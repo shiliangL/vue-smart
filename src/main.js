@@ -12,6 +12,8 @@ import App from './layout/App.vue'
 import '../static/fonts/iconfont.css'
 import './components'
 
+//小组件
+import 'vue-multiselect/dist/vue-multiselect.min.css'
 
 import axios from 'axios'
 Vue.prototype.$api = axios;

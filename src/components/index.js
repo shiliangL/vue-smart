@@ -1,10 +1,12 @@
 import Vue from 'vue'
+import Multiselect from 'vue-multiselect'
 // import Loading from './loading/index.js'
 // import SearchInputBox from './search-input-box/index.js'
 import Util from './util/util.js'
 import './api'
 
 const components = [
+    Multiselect
     // Loading,
     // SearchInputBox
     ];
