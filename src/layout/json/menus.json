@@ -13,21 +13,7 @@
     "name": "deRange",
     "text": "设备管理"
   }]
-}, {
-  "name": "",
-  "text": "价格管理",
-  "icon": "icon iconfont icon-kejiesuan",
-  "items": [{
-    "name": "",
-    "text": "产品定价"
-  }, {
-    "name": "",
-    "text": "经销商价格"
-  }, {
-    "name": "",
-    "text": "销售价格"
-  }]
-}, {
+},  {
   "name": "",
   "text": "客户管理",
   "icon": "icon iconfont icon-customer",
@@ -43,7 +29,7 @@
   "text": "库存管理",
   "icon": "icon iconfont icon-kucunguanli",
   "items": [{
-    "name": "",
+    "name": "KC_Item01",
     "text": "厂家库存"
   }, {
     "name": "",
@@ -53,6 +39,20 @@
     "text": "区域库存"
   }]
 }, {
+  "name": "",
+  "text": "价格管理",
+  "icon": "icon iconfont icon-kejiesuan",
+  "items": [{
+    "name": "",
+    "text": "产品定价"
+  }, {
+    "name": "",
+    "text": "经销商价格"
+  }, {
+    "name": "",
+    "text": "销售价格"
+  }]
+},{
   "name": "",
   "text": "结算管理",
   "icon": "icon iconfont icon-kejiesuan",

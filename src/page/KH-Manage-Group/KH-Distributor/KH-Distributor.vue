@@ -6,7 +6,10 @@
                     <el-input placeholder="经销商ID" v-model.tirm="searchName" />
                 </li>
                 <li>
-                    <multiselect v-model="levelType" :options="levelOptions"></multiselect>
+                    <!-- <multiselect v-model="levelType" :options="levelOptions"></multiselect> -->
+                    <label class="typo__label">Single select / dropdown</label>
+                    <multiselect v-model="value" deselect-label="Can't remove this value" track-by="name" label="name" placeholder="Select one" :options="options" :searchable="false" :allow-empty="true"></multiselect>
+                    <pre class="language-json"><code>{{ value  }}</code></pre>
                 </li>
                 <li>
                     <el-button type="primary" class="mb-sm btn btn-primary" @click="search">查询</el-button>
@@ -24,13 +27,25 @@
         <el-table ref="singleTable" :data="tableData" highlight-current-row @current-change="handleCurrentChange" style="width: 100%">
             <el-table-column type="index" width="50" align="center">
             </el-table-column>
-            <el-table-column property="productName" label="产品名称" align="center">
+            <el-table-column property="productName" label="经销商ID" align="center">
             </el-table-column>
-            <el-table-column property="communicationType" label="通讯方式" align="center">>
+            <el-table-column property="productName" label="经销商姓名" align="center">
             </el-table-column>
-            <el-table-column property="time" label="绑定时间" align="center">>
+            <el-table-column property="productName" label="登记时间" align="center">
             </el-table-column>
-            <el-table-column label="操作" align="center">
+            <el-table-column property="communicationType" label="省" align="center">
+            </el-table-column>
+            <el-table-column property="productName" label="市" align="center">
+            </el-table-column>
+            <el-table-column property="productName" label="县(区)" align="center">
+            </el-table-column>
+            <el-table-column property="productName" label="详细地址" align="center">
+            </el-table-column>
+            <el-table-column property="productName" label="手机号" align="center">
+            </el-table-column>
+            <el-table-column property="productName" label="状态" align="center">
+            </el-table-column>
+            <el-table-column label="操作" align="center" width="270">
                 <template scope="scope" align="center">
                  <el-button size="mini" class="btn-edit" @click="handleEdit(scope.$index, 2)">编辑</el-button>
                  <el-button size="mini" class="btn-edit" @click="handleEdit(scope.$index, 2)">注销经销商</el-button>
@@ -49,65 +64,74 @@
 </div>
 </template>
 <script>
-
- import AddForm from './product-bind.vue'
- import AddFormDetails from './showDetails.vue'
- export default {
-    components: {
-        AddForm,
-        AddFormDetails,
-    },
-    data() {
-        return {
-            currentPage: 1,
-            tableData: [{
-                productName: '产品 A',
-                communicationType: 'COAP',
-                time: '2017-7-2 16:26:08'
-            },{
-                productName: '产品 A',
-                communicationType: 'COAP',
-                time: '2017-7-2 16:26:08'
-            },{
-                productName: '产品 A',
-                communicationType: 'COAP',
-                time: '2017-7-2 16:26:08'
-            }],
-            currentRow: null,
-            searchName: '',
-
-            size: '',
-            dialogTitle: '',
-            showForm: false,
-            showDetails: false,
-            dialogFormVisible: false,
-
-            levelOptions: [
-            {label:'一级',value:1},
-            {label:'二级',value:2},
-            {label:'三级',value:3}
-            ],
-            levelType:''
-        }
-    },
-    methods: {
-        dismiss() {
-            this.showForm = false;
-            this.showDetails = false;
-            this.dialogFormVisible = false;
+    import Multiselect from 'vue-multiselect'
+    import AddForm from './product-bind.vue'
+    import AddFormDetails from './showDetails.vue'
+    export default {
+        components: {
+            AddForm,
+            AddFormDetails,
+            Multiselect
         },
-        onRefresh() {
+        data() {
+            return {
+                currentPage: 1,
+                tableData: [{
+                    productName: '产品 A',
+                    communicationType: 'COAP',
+                    time: '2017-7-2 16:26:08'
+                },{
+                    productName: '产品 A',
+                    communicationType: 'COAP',
+                    time: '2017-7-2 16:26:08'
+                },{
+                    productName: '产品 A',
+                    communicationType: 'COAP',
+                    time: '2017-7-2 16:26:08'
+                }],
+                currentRow: null,
+                searchName: '',
 
+                size: '',
+                dialogTitle: '',
+                showForm: false,
+                showDetails: false,
+                dialogFormVisible: false,
+
+                levelOptions: [
+                {label:'一级',value:1},
+                {label:'二级',value:2},
+                {label:'三级',value:3}
+                ],
+                levelType:'',
+                value: null,
+                options: [
+                { name: 'Vue.js', language: 'JavaScript' },
+                { name: 'Rails', language: 'Ruby' },
+                { name: 'Sinatra', language: 'Ruby' },
+                { name: 'Laravel', language: 'PHP', $isDisabled: true },
+                { name: 'Phoenix', language: 'Elixir' }
+                ]
+            }
         },
-        setCurrent(row) {
-            this.$refs.singleTable.setCurrentRow(row);
-        },
-        handleCurrentChange(val) {
-            this.currentRow = val;
-        },
-        handleEdit(index, type) {
-            switch (type) {
-                case 1:
+        methods: {
+            dismiss() {
+                this.showForm = false;
+                this.showDetails = false;
+                this.dialogFormVisible = false;
+            },
+            onRefresh() {
+
+            },
+            setCurrent(row) {
+                this.$refs.singleTable.setCurrentRow(row);
+            },
+            handleCurrentChange(val) {
+                this.currentRow = val;
+            },
+            handleEdit(index, type) {
+                switch (type) {
+                    case 1:
                     { //编辑
                         console.log('新绑定');
                         this.size = 'tiny';
