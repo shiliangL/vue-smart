@@ -6,10 +6,7 @@
                     <el-input placeholder="经销商ID" v-model.tirm="searchName" />
                 </li>
                 <li>
-                    <!-- <multiselect v-model="levelType" :options="levelOptions"></multiselect> -->
-                    <label class="typo__label">Single select / dropdown</label>
-                    <multiselect v-model="value" deselect-label="Can't remove this value" track-by="name" label="name" placeholder="Select one" :options="options" :searchable="false" :allow-empty="true"></multiselect>
-                    <pre class="language-json"><code>{{ value  }}</code></pre>
+                    
                 </li>
                 <li>
                     <el-button type="primary" class="mb-sm btn btn-primary" @click="search">查询</el-button>

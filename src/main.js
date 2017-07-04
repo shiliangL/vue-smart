@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import './layout/css/layout.css'
-import App from './layout/App.vue'
+import App from './app.vue'
 import '../static/fonts/iconfont.css'
 import './components'
 
