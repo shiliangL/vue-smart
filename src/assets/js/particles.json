@@ -1,8 +1,7 @@
-
-particlesJS('.lz', {
+{
     "particles": {
         "number": {
-            "value": 30,
+            "value": 80,
             "density": {
                 "enable": true,
                 "value_area": 800
@@ -41,7 +40,7 @@ particlesJS('.lz', {
             "random": true,
             "anim": {
                 "enable": false,
-                "speed": 50,
+                "speed": 80,
                 "size_min": 0.1,
                 "sync": false
             }
@@ -55,7 +54,7 @@ particlesJS('.lz', {
         },
         "move": {
             "enable": true,
-            "speed": 8,
+            "speed": 12,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -76,7 +75,7 @@ particlesJS('.lz', {
                 "mode": "repulse"
             },
             "onclick": {
-                "enable": false,
+                "enable": true,
                 "mode": "push"
             },
             "resize": true
@@ -108,4 +107,4 @@ particlesJS('.lz', {
         }
     },
     "retina_detect": true
-});
+}
