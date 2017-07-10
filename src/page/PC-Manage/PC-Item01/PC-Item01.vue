@@ -1,6 +1,6 @@
 <template>
   <div id="KC-Item01">
-    <h1>厂家库存</h1>
+    <h1>产品定价</h1>
     <div class="search">
       <ul>
         <li>
@@ -39,21 +39,18 @@
       <add-form v-if="showForm" @close="dismiss" @refreshPage="onRefresh" @addData="addData"></add-form>
       <add-form-details v-if="showDetails" @close="dismiss" @refreshPage="onRefresh"></add-form-details>
     </el-dialog>
-      <big></big>
   </div>
 </template>
 <script>
   import { init, destroy } from 'ityped';
   import AddForm from './product-bind.vue'
   import AddFormDetails from './showDetails.vue'
-  import big from '../KC-Item02/big.vue'
 
 
   export default {
     components: {
       AddForm,
       AddFormDetails,
-      big
     },
     data() {
       return {

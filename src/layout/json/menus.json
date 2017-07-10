@@ -32,10 +32,10 @@
     "name": "KC_Item01",
     "text": "厂家库存"
   }, {
-    "name": "",
+    "name": "KC_Item02",
     "text": "经销商库存"
   }, {
-    "name": "",
+    "name": "KC_Item03",
     "text": "区域库存"
   }]
 }, {
@@ -43,13 +43,13 @@
   "text": "价格管理",
   "icon": "icon iconfont icon-kejiesuan",
   "items": [{
-    "name": "",
+    "name": "PC_Item01",
     "text": "产品定价"
   }, {
-    "name": "",
+    "name": "PC_Item02",
     "text": "经销商价格"
   }, {
-    "name": "",
+    "name": "PC_Item03",
     "text": "销售价格"
   }]
 },{
@@ -57,13 +57,13 @@
   "text": "结算管理",
   "icon": "icon iconfont icon-kejiesuan",
   "items": [{
-    "name": "",
+    "name": "JC_Item01",
     "text": "经销商结算"
   }, {
-    "name": "",
+    "name": "JC_Item02",
     "text": "客户结算"
   }, {
-    "name": "",
+    "name": "JC_Item03",
     "text": "合作商户结算"
   }]
 }, {
