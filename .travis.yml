@@ -1,0 +1,23 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+
+#before_script:
+  - source ./deploy.sh
+
+script:
+  - shiBuild
+
+after_script:
+  - shiPush
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+
+env:
+ global:
+    - GH_REF: github.com/shiliangL/vue-smart
